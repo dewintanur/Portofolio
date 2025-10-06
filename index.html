@@ -1580,7 +1580,7 @@ let stackOrder = [0, 1, 2, 3, 4];
       stackOrder.forEach((idx, pos) => {
         const c = cards[idx];
         if (c !== activeCard) {
-          c.style.transform = `translate(${(pos - 1) * 30}px, ${pos * 30}px)`;
+c.style.transform = `translate(${(pos - 1) * 30}px, ${pos * 30}px)`;
           c.style.zIndex = cards.length - pos;
           c.classList.remove('active');
         }
