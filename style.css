@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #f9f9ff, #ffe6f7);
   color: #333;
   line-height: 1.6;
@@ -97,7 +97,7 @@ body {
   background: #fff;
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-weight: 500;
 }
 
@@ -111,7 +111,7 @@ body {
   background: #fff;
   padding: 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 .project-card:hover {

@@ -1390,8 +1390,7 @@ width: 200px;  /* kecilin ukuran logo */
           </div>
           <img src="asset/3.png" alt="Project 3">
         </div>
-      </div>
-      <div class="portfolio-card" data-id="4">
+        <div class="portfolio-card" data-id="4">
         <div class="portfolio-info">
           <h5>Split Bill App</h5>
           <p>A simple React app to split bills easily.</p>
@@ -1399,14 +1398,16 @@ width: 200px;  /* kecilin ukuran logo */
         </div>
         <img src="asset/splitbill.png" alt="Project 4">
       </div>
-      <div class="portfolio-card" data-id="4">
-  <div class="portfolio-info">
-    <h5>Website KStream</h5>
-    <p>Website berbasis React untuk streaming konten dan pengelolaan pengguna.</p>
-    <a href="https://dewintanur.github.io/kstream/" target="_blank" class="btn btn-warning mt-2">Lihat Project</a>
-  </div>
-  <img src="asset/kstream.png" alt="Project 4">
-</div>
+      <div class="portfolio-card" data-id="5">
+      <div class="portfolio-info">
+        <h5>Website KStream</h5>
+        <p>Website berbasis React untuk streaming konten dan pengelolaan pengguna.</p>
+        <a href="https://dewintanur.github.io/kstream/" target="_blank" class="btn btn-warning mt-2">Lihat Project</a>
+      </div>
+      <img src="asset/kstream.png" alt="Project 4">
+    </div>
+      </div>
+      
 
 
       <!-- Judul besar -->
@@ -1573,19 +1574,19 @@ width: 200px;  /* kecilin ukuran logo */
     // ===== JS stack interaktif + judul =====
     const cards = Array.from(document.querySelectorAll('.portfolio-card'));
     const title = document.querySelector('.portfolio-title');
-let stackOrder = [0, 1, 2, 3, 4];
-    let activeCard = null;
+    let stackOrder = cards.map((_, i) => i); // otomatis sesuai jumlah kartu
+let activeCard = null;
 
-    function updateStack() {
-      stackOrder.forEach((idx, pos) => {
-        const c = cards[idx];
-        if (c !== activeCard) {
-c.style.transform = `translate(${(pos - 1) * 30}px, ${pos * 30}px)`;
-          c.style.zIndex = cards.length - pos;
-          c.classList.remove('active');
-        }
-      });
+function updateStack() {
+  stackOrder.forEach((idx, pos) => {
+    const c = cards[idx];
+    if (c !== activeCard) {
+      c.style.transform = `translate(${(pos - Math.floor(stackOrder.length / 2)) * 30}px, ${pos * 30}px)`;
+      c.style.zIndex = cards.length - pos;
+      c.classList.remove('active');
     }
+  });
+}
 
     cards.forEach((card, idx) => {
       card.addEventListener('click', () => {
