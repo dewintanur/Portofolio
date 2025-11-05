@@ -1,4 +1,30 @@
 const projects = {
+  0: {
+    title_id: "Web Developer Funtasya World",
+    title_en: "Funtasya World Web Developer",
+    images: [
+      "asset/funtasya1.png",
+      "asset/funtasya2.png",
+      "asset/funtasya3.png",
+    ],
+    desc_id:
+      "Meningkatkan responsivitas dan interaktivitas website melalui optimasi UI/UX. Mengembangkan halaman admin menggunakan Laravel dan MySQL untuk mendukung pengelolaan konten.",
+    desc_en:
+      "Improved website responsiveness and interactivity through UI/UX optimization. Developed admin panel using Laravel and MySQL for content management.",
+    repo: "https://github.com/mifzer/FuntasyaWebsiteMaster", // tambahkan jika ada repo
+    demo: "https://drive.google.com/file/d/1d2onpbZlFmA7YlOBCH7x0jK4TnRBELZ7/preview", // tambahkan jika ada demo
+    video:
+      "https://drive.google.com/file/d/1r6GGkpbGV6iV6SCC-7TBmSRjOIK-b6ph/preview", // tambahkan jika ada video
+    languages: {
+      PHP: 50,
+      Laravel: 40,
+      MySQL: 30,
+      JavaScript: 20,
+      CSS: 10,
+    },
+  },
+
+  // Project yang sudah ada
   1: {
     title_id: "Halaman Admin Prestasi Mahasiswa",
     title_en: "Student Achievement Admin Page",
