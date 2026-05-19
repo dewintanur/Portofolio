@@ -126,4 +126,21 @@ const projects = {
       CSS: 10,
     },
   },
+  6: {
+    title_id: "Aira Telegram Bot",
+    title_en: "Aira Telegram Bot",
+    images: ["asset/aira.png", "asset/aira2.png"],
+    desc_id:
+      "AIRA (AI Intelligent Response Assistant) merupakan chatbot AI berbasis Telegram yang dirancang untuk memberikan layanan chat otomatis dan booking secara lebih cepat, modern, dan efisien",
+    desc_en:
+      "AIRA (AI Intelligent Response Assistant) is a Telegram-based AI chatbot designed to provide faster, modern, and more efficient automated chat and booking services.",
+    repo: "https://docs.google.com/presentation/d/1SRGbkEad7tgLsE4mZj0wsRRQqAB84nl8/edit?usp=sharing&ouid=118371229304456726499&rtpof=true&sd=true",
+    demo: "https://web.telegram.org/k/#@AIRAXXXBOT",
+    video: "",
+    languages: {
+      N8N: 60,
+      Qwen: 80,
+      TelegramBot: 70,
+    },
+  },
 };
